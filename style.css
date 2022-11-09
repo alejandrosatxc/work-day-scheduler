@@ -12,19 +12,33 @@ body {
 }
 
 .hour {
+  text-align: center;
   color: white;
   border-top: 1px dashed white;
   width: 70px;
 }
+
 textarea {
-  background-color: cyan;
+  /* background-color: cyan; */
   resize: none; /*remove the resize handle on the bottom right*/
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border-top: 1px solid grey;
+  border-top: 1px solid darkgrey;
   border-bottom: none;
   border-left: none;
   border-right: none;
+}
+
+.past {
+  background-color: grey;
+}
+
+.present {
+  background-color: magenta;
+}
+
+.future {
+  background-color: cyan;
 }
 
 .save-btn {
