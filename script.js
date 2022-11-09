@@ -9,9 +9,9 @@ $('.save-btn').on('click', saveScheduledEvent)
 
 
 function startClock() {
-    $('#currentDay').text(dayjs().format("dddd, MMMM D h:mm:ss"))
+    $('#currentDay').text(dayjs().format("dddd, MMMM D"))
     var ClockInterval = setInterval(function () {
-        $('#currentDay').text(dayjs().format("dddd, MMMM D h:mm:ss"))
+        $('#currentDay').text(dayjs().format("dddd, MMMM D"))
     }, 1000)
 }
 
