@@ -8,7 +8,6 @@ body {
 
 .time-block {
   height: 70px;
-  /* border-top: 1px solid white; */
 }
 
 .hour {
@@ -19,18 +18,17 @@ body {
 }
 
 textarea {
-  /* background-color: cyan; */
   resize: none; /*remove the resize handle on the bottom right*/
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border-top: 1px solid darkgrey;
+  border-top: 1px solid grey;
   border-bottom: none;
   border-left: none;
   border-right: none;
 }
 
 .past {
-  background-color: grey;
+  background-color: darkgrey;
 }
 
 .present {
