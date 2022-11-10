@@ -6,6 +6,9 @@ body {
   height: 100vh;
 }
 
+/*
+  CSS for every timeblock and the elements inside
+*/
 .time-block {
   height: 70px;
 }
@@ -27,6 +30,17 @@ textarea {
   border-right: none;
 }
 
+.save-btn {
+  width: 70px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: magenta;
+}
+
+/* 
+  A timeblock will get 1 of these 3 classes
+  depending on the current hour 
+*/
 .past {
   background-color: darkgrey;
 }
@@ -37,11 +51,4 @@ textarea {
 
 .future {
   background-color: cyan;
-}
-
-.save-btn {
-  width: 70px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: magenta;
 }
