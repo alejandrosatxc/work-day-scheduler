@@ -37,6 +37,16 @@ textarea {
   background-color: magenta;
 }
 
+/*
+  this is necessary because font-awesome uses a ::before
+  pseudo-element for the icon. check the link for further
+  explaination: 
+  https://stackoverflow.com/questions/21653978/font-awesome-icon-preventing-click-in-parent-button 
+*/
+.save-btn > i {
+  pointer-events: none;
+}
+
 /* 
   A timeblock will get 1 of these 3 classes
   depending on the current hour 
