@@ -4,7 +4,7 @@ var workDayHours = 8 //one timeblock for each hour in a workday
 var workDayStartHour = 14 //pick and hour between 0-23
 
 //First, start a clock, then create timeblocks, then add event listeners to buttons
-startClock()
+setDate()
 createTimeBlocks()
 //TODO: bug click donesnt work when clicking directly on save icon
 $('.save-btn').on('click', saveScheduledEvent)
@@ -13,11 +13,11 @@ $('.save-btn').on('click', saveScheduledEvent)
 //Note: since the requirements only require day of the week, month, and day
 //It is unecessary to use setInterval every second, since we are not 
 //displaying seconds
-function startClock() {
+function setDate() {
     $('#currentDay').text(dayjs().format("dddd, MMMM D"))
-    var ClockInterval = setInterval(function () {
-        $('#currentDay').text(dayjs().format("dddd, MMMM D"))
-    }, 1000)
+    // var ClockInterval = setInterval(function () {
+    //     $('#currentDay').text(dayjs().format("dddd, MMMM D h:mm:ss"))
+    // }, 1000)
 }
 
 //This function dynamically creates timeblocks based on the number of workDayHours and
